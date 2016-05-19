@@ -189,7 +189,7 @@ body {
 .icon-add {
     width: 21px;
     height: 14px;
-    background-image:url('../icons/cross-icon-blue.png');
+    background-image:url('../icon/cross-icon-blue.png');
     background-position: center center;
     background-repeat: no-repeat;
 }
@@ -197,7 +197,7 @@ body {
 .icon-close {
     width: 30px;
     height: 21px;
-    background-image:url('../icons/cross-icon-white.png');
+    background-image:url('../icon/cross-icon-white.png');
     background-position: center center;
     background-repeat: no-repeat;
     -webkit-transform: rotate(44deg);
@@ -210,7 +210,7 @@ body {
 .icon-pen {
     width: 30px;
     height: 25px;
-    background-image:url('../icons/pen-icon.png');
+    background-image:url('../icon/pen-icon.png');
     background-position: center center;
     background-repeat: no-repeat;
 }
@@ -351,5 +351,136 @@ color: #E5E5E5 !important;
 input:-ms-input-placeholder {  
 color: #E5E5E5 !important;  
 }
+
+
+
+/** Edit Idea **/
+
+.popup-editIdea > .content-block {
+    padding: 0;
+    margin-top: 0;
+}
+
+.main-image-mod {
+    position: relative;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.camera-icon {
+    position: absolute;
+    width: 40px;
+    top: 10px;
+    left: 10px;
+}
+
+.main-image-mod > label > img {
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.main-image-mod > label {
+    height: 100%;
+}
+
+input.main-image-input {
+    visibility: hidden;
+    height: 0;
+} 
+
+
+.diagnosis-wrap, .solution-wrap, .benefit-wrap, .more-wrap {
+    padding: 0 10px;
+    margin-bottom: 40px;
+}
+
+.diagnosis-wrap > label, .solution-wrap > label, .benefit-wrap > label, .more-wrap > label  {
+    font-size: 18px;
+}
+
+textarea {
+    box-sizing: border-box;
+    resize: none;
+    width: 100%;
+    border: none;
+    color: #333333;
+    font-family: 'TheSansB';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    border-bottom: 1px solid #11aaff;
+    padding-bottom: 5px;
+    padding-top: 10px;
+    overflow: hidden;
+    border-radius: 0px;
+}
+
+.title-wrap > textarea {
+    border-bottom: none;
+    padding: 0 10px;
+        font-family: 'TheSerifB';
+    margin: 0;
+    font-weight: 400;
+    font-size: 1.5em;
+    color: #333333;
+    cursor: text;
+}
+
+.title-wrap > p {
+    color: #333333;
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+
+
+
+/* CANCEL & SAVE */
+
+.cs-toolbar {
+    background-color: transparent;
+}
+
+.cs-toolbar::before {
+    background-color: transparent;
+}
+
+.cs-wrapper {
+    height: 50px;
+    float: left !important;
+    width: 100%;
+    padding: 0;
+}
+
+.cs-wrapper > a {
+    width: 100%;
+}
+
+.cs-wrapper > a > div {
+    width: 100%; 
+    float: left; 
+    text-align: center;
+}
+
+.ecancel-btn {
+    background-color: #FF5A83;
+}
+
+.esave-btn {
+    background-color: #87D69F;
+}
+
+.esave-btn > p, .ecancel-btn > p {
+    color: white;
+    font-size: 18px;
+    line-height: 30px;
+    margin: 5px 0;
+}
+
+.no-margin-padding {
+    margin: 0;
+    padding: 0;
+}
+
+
 
 

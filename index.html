@@ -219,7 +219,7 @@
 <div class="popup popup-newIdea tablet-fullscreen blue-back">
   <div class="content-block new-idea-block">
     <a href="#" class="close-popup"><i class="icon icon-close"></i></a>
-    <a href="#idea" class="close-popup"><p class="creat-idea-action">Create</p></a>
+    <a href="#idea" data-popup=".popup-editIdea" class="open-popup"><p class="creat-idea-action">Create</p></a>
     <form class="new-idea-title-form">
         <input class="idea-title-input" type="text" name="idea-title" placeholder="Idea Title" >  
     </form>
@@ -229,15 +229,59 @@
 
 <!-- Edit Idea Popup -->
 <div class="popup popup-editIdea tablet-fullscreen">
-  <div class="content-block">
-    <p>Edit Idea</p>r
-    <p><a href="#" class="close-popup">Close popup</a></p>
-  </div>
+    <div class="pages">
+        
+        <div class="page toolbar-fixed">
+            <div class="page-content">
+                <div class="content-block no-margin-padding">
+                <div class="main-image-mod">
+                    <img class="camera-icon" src="icon/camera-shadow.png">
+                    <label for="upload-main-image">
+                        <img src="img/idea-1.jpg" class="main-image-click">
+                    </label>
+                    <input class="main-image-input" type="file" value="upload" id="upload-main-image" accept="image/*" />                
+                </div>
+                <div class="title-wrap">
+                    <textarea class="title-input" name="Title" placeholder="Idea Title" data-autoresize rows="1" maxlength="80">Mein Title für die Idee</textarea>
+                    <p class="ideap-author">by Samuel Lütolf, GHR-DEV-NEX-ZH-ZH2</p>
+                </div>
+                <div class="diagnosis-wrap">
+                    <label>Diagnosis</label>
+                    <textarea value="Diagnosis" data-autoresize rows="1"></textarea>
+                </div>
+                <div class="solution-wrap">
+                    <label>Solution</label>
+                    <textarea value="Solution" data-autoresize rows="1"></textarea>
+                </div>
+                <div class="benefit-wrap">
+                    <label>Benefit</label>
+                    <textarea value="Benefit" data-autoresize rows="1"></textarea>
+                </div>
+                <div class="more-wrap">
+                    <label>More</label>
+                    <textarea value="More" data-autoresize rows="1"></textarea>
+                </div>    
+                </div> 
+            </div>
+            <div class="toolbar toolbar-bottom cs-toolbar">
+            <div class="toolbar-inner cs-wrapper">
+                <a href="#" class="close-popup"><div class="ecancel-btn"><p>cancel</p></div></a>   
+                <a href="#" class="close-popup"><div class="esave-btn"><p>save</p></div></a>
+            </div>
+        </div>
+        </div>
+        
+        
+    </div>
+
+       
+  
 </div>
 
-
+<script type="text/javascript" src="js/materialize.js"></script>
 <script type="text/javascript" src="js/framework7.min.js"></script>
-
+<script type="text/javascript" src="js/jquery.js"></script>
 <script type="text/javascript" src="js/my-app.js"></script>
+    
 </body>
 </html>
